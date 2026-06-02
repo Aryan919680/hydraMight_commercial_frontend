@@ -111,7 +111,7 @@ export const CommercialAuthDialog = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="p-0 overflow-hidden max-w-2xl border-gold/20 rounded-3xl">
+      <DialogContent className="p-0 overflow-hidden w-[calc(100vw-24px)] max-w-2xl max-h-[92vh] border-gold/20 rounded-3xl flex flex-col">
         <div className="relative bg-gradient-hero text-primary-foreground p-7 pb-9">
           <div className="absolute -top-16 -right-16 size-48 rounded-full border border-gold/20" />
           <div className="absolute -top-10 -right-10 size-32 rounded-full border border-gold/10" />
@@ -126,7 +126,7 @@ export const CommercialAuthDialog = ({
           </div>
         </div>
 
-        <div className="p-6 md:p-7 bg-background">
+       <div className="p-5 md:p-7 bg-background overflow-y-auto">
           <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as "login" | "signup")}>
             <TabsList className="grid grid-cols-2 w-full rounded-xl h-11">
               <TabsTrigger value="login" className="rounded-lg">Login</TabsTrigger>
