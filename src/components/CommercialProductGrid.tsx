@@ -64,10 +64,10 @@ export const CommercialProductGrid = ({ onSignup, onLogin, onPickLocation }: Pro
             {selected ? ` Stock source: ${selected.name}, ${selected.city}.` : " Select a delivery hub to view price and stock."}
           </p>
         </div>
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           <Button variant="outline" onClick={onLogin} className="rounded-full">Login</Button>
           <Button onClick={onSignup} className="rounded-full bg-primary hover:bg-primary/90">Request Access</Button>
-        </div>
+        </div> */}
       </div>
 
       {!selected && (
