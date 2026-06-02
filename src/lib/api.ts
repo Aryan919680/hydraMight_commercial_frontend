@@ -1,5 +1,5 @@
 export const API_BASE =
-  "https://hydramight-backend.onrender.com/customer";
+  "https://hydramight-backend.onrender.com/api/customer";
 
 
   export type CustomerType = "household" | "commercial";
